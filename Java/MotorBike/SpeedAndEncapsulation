@@ -1,0 +1,49 @@
+package com.in28minutes.oops;
+
+public class MotorBike {
+	
+  //state
+  
+	private int speed;
+  //member variable (Encapsulation)
+	
+	//behavior
+	//method
+	//inputs - int speed
+	//outputs - viod
+	//name - setspeed
+   void setSpeed(int speed) {//local variable
+		this.speed = speed; 
+    //this.speed: member variable; speed: local variable
+	}
+	
+	int getSpeed() {
+  
+  //don't need an input, the argument of int type can be void, void type can't)
+	
+   return this.speed;
+	}
+  
+	//to get Eclipse to generate it: right click-->Sources-->generate setter and getter
+  
+ void start() {
+	 System.out.println("Bike Started");
+ }
+}
+--------------------------------------------------------------------------------------------
+package com.in28minutes.oops;
+
+public class MotorBikeRunner {
+
+	public static void main(String[] args) {
+		MotorBike ducati = new MotorBike();
+		MotorBike honda = new MotorBike();
+		ducati.start();
+		honda.start();
+		
+		ducati.setSpeed(100);
+		System.out.println(ducati.getSpeed());
+		honda.setSpeed(80);
+		System.out.println(honda.getSpeed());
+	}
+}
