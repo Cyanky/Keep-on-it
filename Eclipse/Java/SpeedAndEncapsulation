@@ -21,7 +21,7 @@ public class MotorBike {
 
   //don't need an input, the argument of int type can be void, void type can't)
 
-   return speed;
+   return this.speed;
 	}
 
 	//to get Eclipse to generate it: right click-->Sources-->generate setter and getter
