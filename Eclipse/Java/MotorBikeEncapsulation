@@ -1,0 +1,59 @@
+package com.in28minutes.oops;
+
+public class MotorBike {
+	
+	private int speed;
+	
+	
+	public void setSpeed(int speed) {
+		if(speed>0)
+		 this.speed = speed; 
+	}
+	
+	public int getSpeed() {
+		return speed;
+	}
+	
+	public void increaseSpeed(int howMuch) {
+		setSpeed(this.speed + howMuch);
+		//this.speed = this.speed + howMuch;	
+	}
+	
+	public void decreaseSpeed(int howMuch) {
+		setSpeed(this.speed - howMuch);
+		//if (this.speed - howMuch>0)
+		//this.speed = this.speed - howMuch;
+		//use to solve repeating the validation
+		//the arguments can be an expression
+		//only if it's greater than zero it can be passed to 'speed'
+	}
+	
+ void start() {
+	 System.out.println("Bike Started");
+ }
+}
+--------------------------------------------------------------------------------
+
+package com.in28minutes.oops;
+
+public class MotorBikeRunner {
+
+	public static void main(String[] args) {
+		MotorBike ducati = new MotorBike();
+		MotorBike honda = new MotorBike();
+		
+		ducati.start();
+		honda.start();
+		
+		ducati.setSpeed(100);
+		
+		ducati.increaseSpeed(100);
+		honda.increaseSpeed(100);
+		ducati.decreaseSpeed(250);
+		honda.decreaseSpeed(250);
+	//*********
+		
+		System.out.println(ducati.getSpeed());
+		System.out.println(honda.getSpeed());
+	}
+}
