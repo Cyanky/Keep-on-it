@@ -4,6 +4,10 @@ public class MotorBike {
 	
 	private int speed;
 	
+	MotorBike(int speed){
+	  this.speed = speed;
+	}
+	//Constructor
 	
 	public void setSpeed(int speed) {
 		if(speed>0)
@@ -39,8 +43,8 @@ package com.in28minutes.oops;
 public class MotorBikeRunner {
 
 	public static void main(String[] args) {
-		MotorBike ducati = new MotorBike();
-		MotorBike honda = new MotorBike();
+		MotorBike ducati = new MotorBike(200);
+		MotorBike honda = new MotorBike(100);
 		
 		ducati.start();
 		honda.start();
