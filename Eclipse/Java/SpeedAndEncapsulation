@@ -12,7 +12,7 @@ public class MotorBike {
 	//inputs - int speed
 	//outputs - viod
 	//name - setspeed
-   void setSpeed(int speed) {//local variable
+   void setSpeed(int speed) {//local variable: belong to the specific method)
 		this.speed = speed; 
     //this.speed: member variable; speed: local variable
 	}
