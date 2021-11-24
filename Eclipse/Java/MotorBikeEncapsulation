@@ -7,7 +7,7 @@ public class MotorBike {
 	MotorBike(int speed){
 	  this.speed = speed;
 	}
-	//Constructor
+	//Constructor( dont need a return type like INT SHORT...)
 	
 	public void setSpeed(int speed) {
 		if(speed>0)
