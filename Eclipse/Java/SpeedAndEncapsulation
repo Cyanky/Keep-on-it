@@ -5,7 +5,7 @@ public class MotorBike {
   //state
 
 	private int speed;
-  //member variable (Encapsulation)
+  //member variable (belong to an objects) (Encapsulation)
 
 	//behavior
 	//method
