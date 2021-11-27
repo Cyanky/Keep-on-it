@@ -7,7 +7,7 @@ public class MotorBike {
 	MotorBike(int speed){
 	  this.speed = speed;
 	}
-	//Constructor( dont need a return type like INT SHORT...)
+	//Constructor( dont need a return type like INT SHORT...); the name of the constructor should be the same as the name of the class
 	
 	public void setSpeed(int speed) {
 		if(speed>0)
