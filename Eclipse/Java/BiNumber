@@ -1,3 +1,5 @@
+////auto-generated
+
 package com.in28minutes.primitive.datatypes;
 
 public class BiNumberRunner {//to correct the compilation error : Ctrl +1
