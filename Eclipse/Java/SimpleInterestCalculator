@@ -1,0 +1,51 @@
+package com.in28minutes.primitive.datatypes;
+
+import java.math.BigDecimal;
+
+public class SimpleInterestCalculateRunner {
+
+	public static void main(String[] args) {
+
+		SimpleInterestCalculator calculator = 
+				new SimpleInterestCalculator("4500.00", "7.5");
+		BigDecimal totalValue = 
+				calculator.calculateTotalValue(5);//5 years
+		System.out.println(totalValue);
+	}
+}
+--------------------------------------------------------------
+
+package com.in28minutes.primitive.datatypes;
+
+//BigDecimal class need to be imported; 
+//use method to do the operations in BigDecimal:number11.add(number12)...
+
+import java.math.BigDecimal;
+//********if want to use any class in Java, need to do a import
+//********exceptions: a package called java.languages imported by default, anything inside java.lang, don't really need to be imported.
+
+public class SimpleInterestCalculator {
+
+	BigDecimal principal;
+	
+	BigDecimal interest;
+	
+	public SimpleInterestCalculator(String principal, String interest) {
+		this.principal = new BigDecimal(principal);
+		this.interest = new BigDecimal(interest).divide(new BigDecimal(100));
+//********the interest should be 7.5%
+	}
+
+	public BigDecimal calculateTotalValue(int noOfYears) {
+		
+		BigDecimal noOfYearsBigDecimal = new BigDecimal(noOfYears);
+		//Total Value = principal + principal * interest * noOfYears
+		
+		BigDecimal totalValue = principal.add(
+		//***************
+				principal.multiply(interest)
+				.multiply(noOfYearsBigDecimal));
+		
+		return totalValue;
+	}
+
