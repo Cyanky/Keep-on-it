@@ -33,7 +33,7 @@ public class SimpleInterestCalculator {
 	public SimpleInterestCalculator(String principal, String interest) {
 		this.principal = new BigDecimal(principal);
 		this.interest = new BigDecimal(interest).divide(new BigDecimal(100));
-//********the interest should be 7.5%
+//********the interest should be 7.5%: divide 100 !!!!!!
 	}
 
 	public BigDecimal calculateTotalValue(int noOfYears) {
