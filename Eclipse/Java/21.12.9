@@ -1,0 +1,65 @@
+******Character Data Type char ( 2 bytes )
+---------------------------------------
+jshell> char ch = 'a'
+
+ch ==> 'a'
+
+jshell> char ch2 = '\u0022'
+
+ch2 ==> '"'
+
+//if you have some special character which cannot type on the keyboard, then can try to find out its unicode value and assign it 
+//search the unicode on google
+      
+jshell> char ch = 65
+ch ==> 'A'
+
+jshell> ch++
+$4 ==> 'A'
+
+jshell> ch
+ch ==> 'B'
+
+jshell> ++ch
+$6 ==> 'C'
+
+jshell> ++ch
+$7 ==> 'D'
+
+jshell> ch + 5
+$8 ==> 73
+// the result of an operation between a ch and a integer is always an integer
+// because the integer is the larger( 4 bytes ), character is 2 bytes. the result is represented in the larger one.
+
+jshell> ch
+ch ==> 'D'
+
+jshell> (int)ch 
+// typecasting
+$10 ==> 68
+// all the operation doing on integer can also be done on all the characters
+
+----------------------------------------
+jshell> char ch = '\n'
+// new line
+ch ==> '\n'
+
+jshell> ch
+ch ==> '\n'
+
+jshell> System.out.println(ch)
+// printing two new lines
+
+jshell>
+
+---------------------------------
+jshell> char ch = '\t'
+ch ==> '\t'
+
+jshell> ch
+ch ==> '\t'
+
+jshell> System.out.println(ch)
+// tab
+
+jshell>
